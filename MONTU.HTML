@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel Management System</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#book-room">Book a Room</a></li>
+            <li><a href="#view-rooms">View Available Rooms</a></li>
+            <li><a href="#checkout">Checkout</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="book-room">
+            <h2>Book a Room</h2>
+            <form>
+                <label for="guest-name">Guest Name:</label>
+                <input type="text" id="guest-name" required>
+
+                <label for="room-type">Room Type:</label>
+                <select id="room-type" required>
+                    <option value="single">Single</option>
+                    <option value="double">Double</option>
+                    <option value="suite">Suite</option>
+                </select>
+
+                <label for="check-in-date">Check-in Date:</label>
+                <input type="date" id="check-in-date" required>
+
+                <label for="check-out-date">Check-out Date:</label>
+                <input type="date" id="check-out-date" required>
+
+                <button type="submit">Book Room</button>
+            </form>
+        </section>
+
+        <section id="view-rooms">
+            <h2>Available Rooms</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Room Number</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Single</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Double</td>
+                        <td>Occupied</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Suite</td>
+                        <td>Available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="checkout">
+            <h2>Checkout</h2>
+            <form>
+                <label for="checkout-room">Room Number:</label>
+                <input type="text" id="checkout-room" required>
+
+                <label for="checkout-date">Checkout Date:</label>
+                <input type="date" id="checkout-date" required>
+
+                <button type="submit">Checkout</button>
+            </form>
+        </section>
+    </main>
+    <center><h1>THANK YOU</h1></center>
+</body>
+</html>
